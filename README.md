@@ -5,8 +5,8 @@
 # PL
 ### Korzystanie:
 Musisz posiadac zainstalowanego node.js aby korzystac ze skryptu.
-> npm i
-> node index.js
+* *npm i* *
+* *node index.js * *
 
 ### Przydatne informacje:
  [^1]Polecam wyczyscic czasem plik z kodem do configu. (Za kazdym razem jak korzystasz ze skryptu to nie tworzy nowego pliku a nadpisuje wczesniejszy wiec bedzie tego sporo).
@@ -21,8 +21,8 @@ Musisz posiadac zainstalowanego node.js aby korzystac ze skryptu.
 
 ### Usage:
 You need to have node.js installed on your pc to use this script.
-> npm i 
-> node index.js
+* *npm i* *
+* *node index.js * *
 
 ### Useful informations:
  [^1]Remember to delete sometimes file which obtains contents to config for csgo plugin. Everytime you use this script contents doesn't delete itself.
