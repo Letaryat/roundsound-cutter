@@ -16,8 +16,10 @@ Musisz posiadac zainstalowanego node.js aby korzystac ze skryptu.
  - W pliku **muzyka.txt** dodajemy url oraz poczatek piosenki w takim formacie:
 
  >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45_ 
+
  lub:
- _https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_
+
+> _https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_
 
  Pamietajcie o spacji miedzy **url** a **czasem**.
  - W pliku **index.js** stworzylem kilka zmiennych ktore mozecie pozmieniac. (nazwe katalogu w ktorym maja pojawic sie .mp3, nazwe pliku z zawartoscia do configu, ile sekund ma trwac roundsound, czy w zawartosci do configu ma byc jakas okreslona flaga).
@@ -36,8 +38,10 @@ You need to have node.js installed on your pc to use this script.
  - In file **muzyka.txt** we need to paste the url and also give the start of roundsound in this format:
 
  >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45_
+
  or:
- _https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_
+
+ >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_
 
  Remember about space between **url** and **time**
  - In **index.js** I created a few variables that you can change. (dir name where .mp3 will be, name of the file with .cfg content, how many seconds roundsound should be, if in plugin config roundsounds should be for a specific flag only.)
