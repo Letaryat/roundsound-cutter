@@ -1,5 +1,6 @@
 # roundsound-cutter
  Script in node.js that creates Roundsounds for CSGO community servers
+ 
  Skrypt napisany w node.js ktory tworzy Roundsoundy dla serwerow spolecznosciowych CSGO.
  
 # PL
