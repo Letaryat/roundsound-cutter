@@ -1,7 +1,7 @@
 # roundsound-cutter
- Skrypt napisany w node.js ktory tworzy Roundsoundy dla serwerow spolecznosciowych CSGO.
+ Skrypt napisany w node.js ktory tworzy Roundsoundy dla serwerow spolecznosciowych CSGO. Domyslnie roundsound trwa 10 sekund. Dodaje Fade-in okolo 3 sekund oraz Fade-out 3 sekund.
 
- Script in node.js that creates Roundsounds for CSGO community servers
+ Script in node.js that creates Roundsounds for CSGO community servers. By default roundsound lasts 10 seconds. It adds fade-in (about 3 seconds) and fade-out (about 3 seconds)
 
  
 # PL

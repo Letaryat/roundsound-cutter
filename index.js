@@ -62,11 +62,11 @@ rd.on('line', function(line){
             .audioFilters([
                 {
                   filter: 'afade',
-                  options: 't=in:st=0:d=5'
+                  options: 't=in:st=0:d=3'
                 },
                 {
                   filter: 'afade',
-                  options: 't=out:st=5:d=5'
+                  options: 't=out:st=7:d=3'
                 }
               ])
             .setStartTime(poczatek)
