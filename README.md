@@ -11,6 +11,7 @@ Musisz posiadac zainstalowanego node.js aby korzystac ze skryptu.
 * node index.js 
 
 ### Przydatne informacje:
+ - Automatycznie tworzy zawartosc do configu pluginu pMVPMusic.
  - W pliku **index.js** stworzylem kilka zmiennych ktore mozecie pozmieniac. (nazwe katalogu w ktorym maja pojawic sie .mp3, nazwe pliku z zawartoscia do configu, ile sekund ma trwac roundsound, czy w zawartosci do configu ma byc jakas okreslona flaga).
  - Polecam wyczyscic czasem plik z kodem do configu. (Za kazdym razem jak korzystasz ze skryptu to nie tworzy nowego pliku a nadpisuje wczesniejszy wiec bedzie tego sporo).
  - Czasem potrafi wyskoczyc blad. Najprawdopodobniej spowodowany prawami autorskimi. Wtedy trzeba po prostu pominac piosenke i usunac url. Jest to ta piosenka na ktorej sie po prostu program zawiesil.
@@ -33,8 +34,9 @@ You need to have node.js installed on your pc to use this script.
 * node index.js 
 
 ### Useful informations:
+ - Creates automatically contents for CSGO plugin pMVPMusic Config.
  - In **index.js** I created a few variables that you can change. (dir name where .mp3 will be, name of the file with .cfg content, how many seconds roundsound should be, if in plugin config roundsounds should be for a specific flag only.)
- - Remember to delete sometimes file which obtains contents to config for csgo plugin. Everytime you use this script contents doesn't delete itself.
+ - Remember to delete sometimes file which obtains contents to config for csgo plugin. Everytime you use this script contents doesn't delete themselves.
  - Sometimes there can ocur an error that is connected probably connected with copyrights. You need to delete the url on which scripts showed error and just move on without this particular song. 
  - In file **muzyka.txt** we need to paste the url and also give the start of roundsound in this format:
 
