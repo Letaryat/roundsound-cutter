@@ -1,9 +1,8 @@
 const fs = require('fs');
-const ytdl = require('ytdl-core');
+const yt = require("yt-converter");
 const ffmpegStatic = require('ffmpeg-static');
-const ffmpegfluent = require('fluent-ffmpeg'); //nie wiem czy to jest ostatecznie potrzebne, pewnie nie.
+const ffmpegfluent = require('fluent-ffmpeg'); //nie wiem czy to jest ostatecznie potrzebne pewnie nie
 const ffmpeg = require('fluent-ffmpeg');
-const prompt = require('prompt-sync')();
 const readline = require('readline');
 ffmpeg.setFfmpegPath(ffmpegStatic);
 
@@ -17,7 +16,7 @@ EDYTUJ TO NIZEJ CO NIE ZIELONE OCZYWISCIE. TUTAJ SOBIE MOZESZ POZMIENIAC NAZWY:
 var katalog = "pioseneczki";
 var tekstowy = "output.txt";
 var koniec = 10
-var flaga = '';
+var flaga = 'd';
 
 //KONIEC. NIZEJ TEGO CO JEST NIE ZMIENIAJ BO NIE WARTO CHYBA ZE WIESZ CO I JAK BO JA NP SAM NIE WIEM CO TU SIE DZIEJE ALE DZIALA
 
@@ -28,7 +27,10 @@ var rd = readline.createInterface({
 var dir = `./${katalog}`;
 if(!fs.existsSync(dir)){
     fs.mkdirSync(dir);
-}
+};
+if(!fs.existsSync(`./temp`)){
+  fs.mkdirSync(`./temp`);
+};
 
 rd.on('line', function(line){
     const array = [line];
@@ -36,13 +38,11 @@ rd.on('line', function(line){
     const txt = element.split(' ');
     const url = txt[0];
     const poczatek = txt[1];
-    //ytdl:
-    let videoID = ytdl.getURLVideoID(url);
-    ytdl.getInfo(videoID).then(console.log("Sprawdzanko")).then(info => {
-        var nazwa = info.videoDetails.title;
-        let stream = ytdl(url,{
-            quality: "highestaudio",
-        });
+    //yt:
+    yt.getInfo(`${url}`).then(info => {
+        const test = info['title'];
+        const nazwa = test.replace('/', '');
+        const onData = console.log('Robionko');
         var content = `
         "${nazwa}"
         {
@@ -52,13 +52,11 @@ rd.on('line', function(line){
         fs.appendFile(`${tekstowy}`, content, err =>{
            if(err) console.error(err);
         })
-        stream.pipe(fs.createWriteStream(`${nazwa}.mp4`));
-        console.log("Nazwa: " + info.videoDetails.title + ` Adres URL: ${url}`);
-        stream.on("finish", () =>{
-        //ffmpeg:
-            console.log("Ukonczono Pobieranie pliku .mp4");
+        function onClose(){
             ffmpeg()
-            .input(`${nazwa}.mp4`)
+            .input(`./temp/${nazwa}.mp3`)
+            .setStartTime(poczatek)
+            .duration(koniec)
             .audioFilters([
                 {
                   filter: 'afade',
@@ -69,37 +67,29 @@ rd.on('line', function(line){
                   options: 't=out:st=7:d=3'
                 }
               ])
-            .setStartTime(poczatek)
-            .duration(koniec)
-            .audioBitrate(128)
             .saveToFile(`${katalog}/${nazwa}.mp3`)
             .on('progress', (progress) => {
                 if (progress.percent){
-                    console.log(`Processing...`);
+                   console.log(`Processing...`);
                 }
-            })
-            .on('end', () => {
-                console.log('Ukonczono konwertowanie na .mp3');
-            //Usuwanie pliku .mp4
-                try {
-                    fs.unlinkSync(`${nazwa}.mp4`);
-                    console.log("Usunieto plik .mp4 \n************************************\ndi ent.");
+                })
+                .on('end', () => {
+                 console.log('Ukonczono konwertowanie na .mp3');
+                 try {
+                    fs.unlinkSync(`./temp/${nazwa}.mp3`);
+                    console.log("Usunieto plik temp \n************************************\ndi ent.");
                   } catch (error) {
                     console.log(error);
                   }
-            //Koniec usuwania pliku .mp4
-            })
-            .on('error', (error) =>{
-                console.error(error);
-
-            });
-        });
-        stream.on('error', (error) =>{
-            console.error(error);
-        })
+                })
+        }
+        yt.convertAudio({
+            url: `${url}`,
+            itag: 140,
+            directoryDownload: `./temp`
+        }, onData, onClose)
     })
-
-    })
+});
 })
 rd.on('close', function(){
  //to w sumie tak jest bo jest 

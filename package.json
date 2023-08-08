@@ -1,19 +1,22 @@
 {
-  "name": "ytdl",
+  "name": "roundsound-cutter",
   "version": "1.0.0",
-  "description": "",
+  "description": "Creates roundsounds for CSGO community servers",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Letaryat/roundsound-cutter"
+  },
+  "author": "Letaryat",
   "license": "ISC",
   "dependencies": {
-    "ffmpeg": "^0.0.4",
     "ffmpeg-static": "^5.1.0",
     "fluent-ffmpeg": "^2.1.2",
     "fs": "^0.0.1-security",
-    "prompt-sync": "^4.2.0",
-    "ytdl-core": "^4.11.5"
+    "readline": "^1.3.0",
+    "yt-converter": "^1.1.0"
   }
 }
