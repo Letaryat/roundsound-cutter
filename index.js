@@ -57,6 +57,8 @@ rd.on('line', function(line){
             .input(`./temp/${nazwa}.mp3`)
             .setStartTime(poczatek)
             .duration(koniec)
+          /*Tutaj jest Fade in i fade-out w piosenkach. Mozna usunac zaczynajac z tego miejsca */
+          //st = punkt rozpoczecia | d = duration / czas trwania (wszystko w sekundach)
             .audioFilters([
                 {
                   filter: 'afade',
@@ -67,6 +69,7 @@ rd.on('line', function(line){
                   options: 't=out:st=7:d=3'
                 }
               ])
+            /*Konczac tu*/
             .saveToFile(`${katalog}/${nazwa}.mp3`)
             .on('progress', (progress) => {
                 if (progress.percent){
