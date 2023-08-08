@@ -16,7 +16,7 @@ EDYTUJ TO NIZEJ CO NIE ZIELONE OCZYWISCIE. TUTAJ SOBIE MOZESZ POZMIENIAC NAZWY:
 var katalog = "pioseneczki";
 var tekstowy = "output.txt";
 var koniec = 10
-var flaga = 'd';
+var flaga = '';
 
 //KONIEC. NIZEJ TEGO CO JEST NIE ZMIENIAJ BO NIE WARTO CHYBA ZE WIESZ CO I JAK BO JA NP SAM NIE WIEM CO TU SIE DZIEJE ALE DZIALA
 
