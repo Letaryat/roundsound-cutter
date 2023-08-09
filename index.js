@@ -18,7 +18,7 @@ var tekstowy = "output.txt";
 var koniec = 10
 var flaga = '';
 
-//KONIEC. NIZEJ TEGO CO JEST NIE ZMIENIAJ BO NIE WARTO CHYBA ZE WIESZ CO I JAK BO JA NP SAM NIE WIEM CO TU SIE DZIEJE ALE DZIALA
+//koniec
 
 //kiedy ma sie rozpoczac fadeout
 var fod = koniec - 3;
