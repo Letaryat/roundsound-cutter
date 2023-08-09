@@ -98,9 +98,4 @@ rd.on('line', function(line){
 });
 })
 rd.on('close', function(){
- //to w sumie tak jest bo jest 
- //internet mowil ze powinno byc
- //no to jest
- //ale to nic nie daje
- //chyba ze dupy
 })
