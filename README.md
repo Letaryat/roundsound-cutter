@@ -20,7 +20,7 @@ node index.js
  - W pliku **muzyka.txt** dodajemy url oraz poczatek piosenki w takim formacie:
 ```bash
 https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45
-https://www.youtube.com/watch?v=xWIO_ibvRuI 45
+https://www.youtube.com/watch?v=xWIO_ibvRuI 25
 ```
 
  Pamietajcie o spacji miedzy **url** a **czasem**. Piosenek moze byc kilka ale musza byc w nastepnej linii tak jak w przykladzie powyzej. Czas moze byc w samych sekundach lub w minutach.
@@ -44,6 +44,6 @@ node index.js
  - In file **muzyka.txt** we need to paste the url and also give the start of roundsound in this format:
 ```bash
 https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45
-https://www.youtube.com/watch?v=xWIO_ibvRuI 45
+https://www.youtube.com/watch?v=xWIO_ibvRuI 25
 ```
  Remember about space between **url** and **time**. There can be multiple URL's in the "muzyka.txt" file but every URL must be in the next line like in the example above. Beginning of song can be in seconds or minutes.
