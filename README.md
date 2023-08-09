@@ -23,7 +23,7 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45
 https://www.youtube.com/watch?v=dQw4w9WgXcQ 45
 ```
 
- Pamietajcie o spacji miedzy **url** a **czasem**. Piosenek moze byc kilka ale musza byc w kolejnej linii tak jak w przykladzie powyzej. Czas moze byc w samych sekundach lub w minutach.
+ Pamietajcie o spacji miedzy **url** a **czasem**. Piosenek moze byc kilka ale musza byc w nastepnej linii tak jak w przykladzie powyzej. Czas moze byc w samych sekundach lub w minutach.
 
 
 # ENG
@@ -46,4 +46,4 @@ node index.js
 https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45
 https://www.youtube.com/watch?v=dQw4w9WgXcQ 45
 ```
- Remember about space between **url** and **time**. There can be multiple URL's in the "muzyka.txt" file but every URL must be in the next line like in the example above.
+ Remember about space between **url** and **time**. There can be multiple URL's in the "muzyka.txt" file but every URL must be in the next line like in the example above. Beginning of song can be in seconds or minutes.
