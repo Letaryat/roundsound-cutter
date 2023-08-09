@@ -18,13 +18,10 @@ Musisz posiadac zainstalowanego node.js aby korzystac ze skryptu.
  - ~~Czasem potrafi wyskoczyc blad. Najprawdopodobniej spowodowany prawami autorskimi. Wtedy trzeba po prostu pominac piosenke i usunac url. Jest to ta piosenka na ktorej sie po prostu program zawiesil.~~ - Zmieniony pakiet, nie powinno miec to juz miejsca.
  - W pliku **muzyka.txt** dodajemy url oraz poczatek piosenki w takim formacie:
 
- >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45_ 
+ >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45_
+ >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_ 
 
- lub:
-
-> _https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_
-
- Pamietajcie o spacji miedzy **url** a **czasem**.
+ Pamietajcie o spacji miedzy **url** a **czasem**. Piosenek moze byc kilka ale musza byc w kolejnej linii tak jak w przykladzie powyzej. Czas moze byc w samych sekundach lub w minutach.
 
 
 # ENG
@@ -43,9 +40,6 @@ You need to have node.js installed on your pc to use this script.
  - In file **muzyka.txt** we need to paste the url and also give the start of roundsound in this format:
 
  >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45_
-
- or:
-
  >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_
 
- Remember about space between **url** and **time**
+ Remember about space between **url** and **time**. There can be multiple URL's in the "muzyka.txt" file but every URL must be in the next line like in the example above.
