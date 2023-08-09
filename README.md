@@ -7,9 +7,10 @@
 # PL
 ### Korzystanie:
 Musisz posiadac zainstalowanego node.js aby korzystac ze skryptu.
-* npm i
-* node index.js 
-
+```bash
+npm i
+node index.js 
+```
 ### Przydatne informacje:
  - Automatycznie tworzy zawartosc do configu pluginu pMVPMusic.
  - W pliku **index.js** stworzylem kilka zmiennych ktore mozecie pozmieniac. (nazwe katalogu w ktorym maja pojawic sie .mp3, nazwe pliku z zawartoscia do configu, ile sekund ma trwac roundsound, czy w zawartosci do configu ma byc jakas okreslona flaga).
@@ -17,9 +18,10 @@ Musisz posiadac zainstalowanego node.js aby korzystac ze skryptu.
 
  - ~~Czasem potrafi wyskoczyc blad. Najprawdopodobniej spowodowany prawami autorskimi. Wtedy trzeba po prostu pominac piosenke i usunac url. Jest to ta piosenka na ktorej sie po prostu program zawiesil.~~ - Zmieniony pakiet, nie powinno miec to juz miejsca.
  - W pliku **muzyka.txt** dodajemy url oraz poczatek piosenki w takim formacie:
-
- >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45_
- >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_ 
+```bash
+https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45_
+https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_
+```
 
  Pamietajcie o spacji miedzy **url** a **czasem**. Piosenek moze byc kilka ale musza byc w kolejnej linii tak jak w przykladzie powyzej. Czas moze byc w samych sekundach lub w minutach.
 
@@ -28,8 +30,10 @@ Musisz posiadac zainstalowanego node.js aby korzystac ze skryptu.
 
 ### Usage:
 You need to have node.js installed on your pc to use this script.
-* npm i
-* node index.js 
+```bash
+npm i
+node index.js 
+```
 
 ### Useful informations:
  - Creates automatically contents for CSGO plugin pMVPMusic Config.
@@ -38,8 +42,8 @@ You need to have node.js installed on your pc to use this script.
 
  - ~~Sometimes there can ocur an error that is connected probably connected with copyrights. You need to delete the url on which scripts showed error and just move on without this particular song.~~ - Changed package, It shouldn't happen anymore.
  - In file **muzyka.txt** we need to paste the url and also give the start of roundsound in this format:
-
- >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45_
- >_https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_
-
+```bash
+https://www.youtube.com/watch?v=dQw4w9WgXcQ 0:45_
+https://www.youtube.com/watch?v=dQw4w9WgXcQ 45_
+```
  Remember about space between **url** and **time**. There can be multiple URL's in the "muzyka.txt" file but every URL must be in the next line like in the example above.
