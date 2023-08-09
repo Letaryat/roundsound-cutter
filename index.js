@@ -20,6 +20,9 @@ var flaga = '';
 
 //KONIEC. NIZEJ TEGO CO JEST NIE ZMIENIAJ BO NIE WARTO CHYBA ZE WIESZ CO I JAK BO JA NP SAM NIE WIEM CO TU SIE DZIEJE ALE DZIALA
 
+//kiedy ma sie rozpoczac fadeout
+var fod = koniec - 3;
+
 var rd = readline.createInterface({
     input: fs.createReadStream('muzyka.txt')
 })
@@ -66,7 +69,7 @@ rd.on('line', function(line){
                 },
                 {
                   filter: 'afade',
-                  options: 't=out:st=7:d=3'
+                  options: `t=out:st=${fod}:d=3`
                 }
               ])
             /*Konczac tu*/
