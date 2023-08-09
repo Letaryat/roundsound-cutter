@@ -21,7 +21,7 @@ var flaga = '';
 //KONIEC. NIZEJ TEGO CO JEST NIE ZMIENIAJ BO NIE WARTO CHYBA ZE WIESZ CO I JAK BO JA NP SAM NIE WIEM CO TU SIE DZIEJE ALE DZIALA
 
 //kiedy ma sie rozpoczac fadeout
-
+var fod = koniec - 3;
 
 var rd = readline.createInterface({
     input: fs.createReadStream('muzyka.txt')
